@@ -1,0 +1,15 @@
+E:\dotnet\petprojects\SocialNetwork\UserServiceLibrary\bin\Debug\net8.0\UserServiceLibrary.deps.json
+E:\dotnet\petprojects\SocialNetwork\UserServiceLibrary\bin\Debug\net8.0\UserServiceLibrary.dll
+E:\dotnet\petprojects\SocialNetwork\UserServiceLibrary\bin\Debug\net8.0\UserServiceLibrary.pdb
+E:\dotnet\petprojects\SocialNetwork\UserServiceLibrary\bin\Debug\net8.0\AuthServiceLibrary.dll
+E:\dotnet\petprojects\SocialNetwork\UserServiceLibrary\bin\Debug\net8.0\AuthServiceLibrary.pdb
+E:\dotnet\petprojects\SocialNetwork\UserServiceLibrary\obj\Debug\net8.0\UserServiceLibrary.csproj.AssemblyReference.cache
+E:\dotnet\petprojects\SocialNetwork\UserServiceLibrary\obj\Debug\net8.0\UserServiceLibrary.GeneratedMSBuildEditorConfig.editorconfig
+E:\dotnet\petprojects\SocialNetwork\UserServiceLibrary\obj\Debug\net8.0\UserServiceLibrary.AssemblyInfoInputs.cache
+E:\dotnet\petprojects\SocialNetwork\UserServiceLibrary\obj\Debug\net8.0\UserServiceLibrary.AssemblyInfo.cs
+E:\dotnet\petprojects\SocialNetwork\UserServiceLibrary\obj\Debug\net8.0\UserServiceLibrary.csproj.CoreCompileInputs.cache
+E:\dotnet\petprojects\SocialNetwork\UserServiceLibrary\obj\Debug\net8.0\UserServ.32A306FE.Up2Date
+E:\dotnet\petprojects\SocialNetwork\UserServiceLibrary\obj\Debug\net8.0\UserServiceLibrary.dll
+E:\dotnet\petprojects\SocialNetwork\UserServiceLibrary\obj\Debug\net8.0\refint\UserServiceLibrary.dll
+E:\dotnet\petprojects\SocialNetwork\UserServiceLibrary\obj\Debug\net8.0\UserServiceLibrary.pdb
+E:\dotnet\petprojects\SocialNetwork\UserServiceLibrary\obj\Debug\net8.0\ref\UserServiceLibrary.dll
