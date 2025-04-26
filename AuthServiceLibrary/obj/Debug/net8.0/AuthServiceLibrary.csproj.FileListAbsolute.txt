@@ -1,0 +1,14 @@
+E:\dotnet\petprojects\SocialNetwork\AuthServiceLibrary\bin\Debug\net8.0\AuthServiceLibrary.deps.json
+E:\dotnet\petprojects\SocialNetwork\AuthServiceLibrary\bin\Debug\net8.0\AuthServiceLibrary.runtimeconfig.json
+E:\dotnet\petprojects\SocialNetwork\AuthServiceLibrary\bin\Debug\net8.0\AuthServiceLibrary.dll
+E:\dotnet\petprojects\SocialNetwork\AuthServiceLibrary\bin\Debug\net8.0\AuthServiceLibrary.pdb
+E:\dotnet\petprojects\SocialNetwork\AuthServiceLibrary\obj\Debug\net8.0\AuthServiceLibrary.csproj.AssemblyReference.cache
+E:\dotnet\petprojects\SocialNetwork\AuthServiceLibrary\obj\Debug\net8.0\AuthServiceLibrary.GeneratedMSBuildEditorConfig.editorconfig
+E:\dotnet\petprojects\SocialNetwork\AuthServiceLibrary\obj\Debug\net8.0\AuthServiceLibrary.AssemblyInfoInputs.cache
+E:\dotnet\petprojects\SocialNetwork\AuthServiceLibrary\obj\Debug\net8.0\AuthServiceLibrary.AssemblyInfo.cs
+E:\dotnet\petprojects\SocialNetwork\AuthServiceLibrary\obj\Debug\net8.0\AuthServiceLibrary.csproj.CoreCompileInputs.cache
+E:\dotnet\petprojects\SocialNetwork\AuthServiceLibrary\obj\Debug\net8.0\AuthServiceLibrary.dll
+E:\dotnet\petprojects\SocialNetwork\AuthServiceLibrary\obj\Debug\net8.0\refint\AuthServiceLibrary.dll
+E:\dotnet\petprojects\SocialNetwork\AuthServiceLibrary\obj\Debug\net8.0\AuthServiceLibrary.pdb
+E:\dotnet\petprojects\SocialNetwork\AuthServiceLibrary\obj\Debug\net8.0\AuthServiceLibrary.genruntimeconfig.cache
+E:\dotnet\petprojects\SocialNetwork\AuthServiceLibrary\obj\Debug\net8.0\ref\AuthServiceLibrary.dll
