@@ -27,7 +27,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<DatabaseConnect>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-
+builder.Services.AddHttpContextAccessor(); // Добавляет IHttpContextAccessor
 
 
 
@@ -95,7 +95,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         options.TokenValidationParameters = new TokenValidationParameters
         {
             ValidateIssuer = true, // Проверять издателя
-            ValidateAudience = true, // Проверять получателя
+            ValidateAudience = false, // Проверять получателя
             ValidateLifetime = true, // Проверять срок действия
             ValidateIssuerSigningKey = true, // Проверять подпись
             ValidIssuer = builder.Configuration["Jwt:Issuer"], // Из appsettings.json

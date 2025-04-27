@@ -1,0 +1,17 @@
+E:\dotnet\petprojects\SocialNetwork\PostServiceLibrary\bin\Debug\net8.0\PostServiceLibrary.deps.json
+E:\dotnet\petprojects\SocialNetwork\PostServiceLibrary\bin\Debug\net8.0\PostServiceLibrary.runtimeconfig.json
+E:\dotnet\petprojects\SocialNetwork\PostServiceLibrary\bin\Debug\net8.0\PostServiceLibrary.dll
+E:\dotnet\petprojects\SocialNetwork\PostServiceLibrary\bin\Debug\net8.0\PostServiceLibrary.pdb
+E:\dotnet\petprojects\SocialNetwork\PostServiceLibrary\bin\Debug\net8.0\AuthServiceLibrary.dll
+E:\dotnet\petprojects\SocialNetwork\PostServiceLibrary\bin\Debug\net8.0\AuthServiceLibrary.pdb
+E:\dotnet\petprojects\SocialNetwork\PostServiceLibrary\obj\Debug\net8.0\PostServiceLibrary.csproj.AssemblyReference.cache
+E:\dotnet\petprojects\SocialNetwork\PostServiceLibrary\obj\Debug\net8.0\PostServiceLibrary.GeneratedMSBuildEditorConfig.editorconfig
+E:\dotnet\petprojects\SocialNetwork\PostServiceLibrary\obj\Debug\net8.0\PostServiceLibrary.AssemblyInfoInputs.cache
+E:\dotnet\petprojects\SocialNetwork\PostServiceLibrary\obj\Debug\net8.0\PostServiceLibrary.AssemblyInfo.cs
+E:\dotnet\petprojects\SocialNetwork\PostServiceLibrary\obj\Debug\net8.0\PostServiceLibrary.csproj.CoreCompileInputs.cache
+E:\dotnet\petprojects\SocialNetwork\PostServiceLibrary\obj\Debug\net8.0\PostServ.399CB4F1.Up2Date
+E:\dotnet\petprojects\SocialNetwork\PostServiceLibrary\obj\Debug\net8.0\PostServiceLibrary.dll
+E:\dotnet\petprojects\SocialNetwork\PostServiceLibrary\obj\Debug\net8.0\refint\PostServiceLibrary.dll
+E:\dotnet\petprojects\SocialNetwork\PostServiceLibrary\obj\Debug\net8.0\PostServiceLibrary.pdb
+E:\dotnet\petprojects\SocialNetwork\PostServiceLibrary\obj\Debug\net8.0\PostServiceLibrary.genruntimeconfig.cache
+E:\dotnet\petprojects\SocialNetwork\PostServiceLibrary\obj\Debug\net8.0\ref\PostServiceLibrary.dll
