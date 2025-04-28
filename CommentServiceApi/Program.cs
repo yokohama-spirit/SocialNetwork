@@ -33,9 +33,9 @@ builder.Services.AddDbContext<CommentsConnect>(options =>
 
 
 
-builder.Services.AddScoped<IUserSupport, UserSupp>();
+builder.Services.AddScoped<IUserSupport, UserSupportForComments>();
 builder.Services.AddScoped<ICommentRepository, CommentRepository>();
-
+builder.Services.AddScoped<IRepliesRepository, RepliesRepository>();
 
 
 

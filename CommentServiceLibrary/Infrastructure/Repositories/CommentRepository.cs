@@ -1,5 +1,4 @@
 ﻿using AuthServiceLibrary.Domain.Entities;
-using CommentServiceLibrary.Application.Requests;
 using CommentServiceLibrary.Domain.Entities;
 using CommentServiceLibrary.Domain.Interfaces;
 using System;
@@ -21,6 +20,7 @@ using MediatR;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Http;
+using CommentServiceLibrary.Application.Requests.Comments;
 
 namespace CommentServiceLibrary.Infrastructure.Repositories
 {
@@ -65,8 +65,7 @@ namespace CommentServiceLibrary.Infrastructure.Repositories
                     _logg.LogInformation($"Creating comment: PostId={postId}, UserId={await _support.GetCurrentUserId()}, Content={request.Content}");
                     var comment = _mapper.Map<Comment>(request);
                     comment.PostId = postId;
-                    comment.UserId = _httpContextAccessor.HttpContext?.User?
-                    .FindFirstValue(ClaimTypes.NameIdentifier) ?? string.Empty;
+                    comment.UserId = await _support.GetCurrentUserId();
 
                     await _conn.Comments.AddAsync(comment);
                     await _conn.SaveChangesAsync();

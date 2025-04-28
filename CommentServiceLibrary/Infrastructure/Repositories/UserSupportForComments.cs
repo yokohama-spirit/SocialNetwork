@@ -9,10 +9,10 @@ using System.Threading.Tasks;
 
 namespace CommentServiceLibrary.Infrastructure.Repositories
 {
-    public class UserSupp : IUserSupport
+    public class UserSupportForComments : IUserSupport
     {
         private readonly IHttpContextAccessor _httpContextAccessor;
-        public UserSupp
+        public UserSupportForComments
             (IHttpContextAccessor httpContextAccessor)
         {
             _httpContextAccessor = httpContextAccessor;

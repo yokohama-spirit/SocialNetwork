@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CommentServiceLibrary.Application.Requests
+namespace CommentServiceLibrary.Application.Requests.Comments
 {
-    public class CreateCommentDTO
+    public class UpdateCommentDTO
     {
         public required string Content { get; set; }
     }

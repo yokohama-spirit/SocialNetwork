@@ -14,5 +14,6 @@ namespace CommentServiceLibrary.Domain.Entities
         public required string Content { get; set; }
         public string? PostId { get; set; }
         public string? UserId { get; set; }
+        public List<Reply>? Replies { get; set; }
     }
 }

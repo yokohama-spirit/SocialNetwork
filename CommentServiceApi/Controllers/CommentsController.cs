@@ -1,4 +1,4 @@
-﻿using CommentServiceLibrary.Application.Requests;
+﻿using CommentServiceLibrary.Application.Requests.Comments;
 using CommentServiceLibrary.Domain.Entities;
 using CommentServiceLibrary.Domain.Interfaces;
 using Microsoft.AspNetCore.Authorization;

@@ -15,5 +15,6 @@ namespace CommentServiceLibrary.Infrastructure.Data
         public CommentsConnect(DbContextOptions<CommentsConnect> options) : base(options) { }
 
         public DbSet<Comment> Comments { get; set; }
+        public DbSet<Reply> Replies { get; set; }
     }
 }

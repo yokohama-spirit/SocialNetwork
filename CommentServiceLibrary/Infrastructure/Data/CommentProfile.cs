@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
-using CommentServiceLibrary.Application.Requests;
+using CommentServiceLibrary.Application.Requests.Comments;
+using CommentServiceLibrary.Application.Requests.Replies;
 using CommentServiceLibrary.Domain.Entities;
 using PostServiceLibrary.Application.Requests;
 using PostServiceLibrary.Domain.Entities;
@@ -16,6 +17,7 @@ namespace CommentServiceLibrary.Infrastructure.Data
         public CommentProfile()
         {
             CreateMap<CreateCommentDTO, Comment>();
+            CreateMap<CreateReplyDTO, Reply>();
         }
     }
 }
