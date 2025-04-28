@@ -77,6 +77,7 @@ namespace CommentServiceApi.Controllers
         }
 
         //Метод для получения ответа по его идентификатору
+        [AllowAnonymous]
         [HttpGet("{replyId}")]
         public async Task<Reply> GetReplyByIdAsync
             (string replyId)
@@ -85,6 +86,7 @@ namespace CommentServiceApi.Controllers
         }
 
         //Метод для получения всех ответов пользователя
+        [AllowAnonymous]
         [HttpGet("user/{userId}")]
         public async Task<IEnumerable<Reply>> GetUserRepliesAsync
             (string userId)

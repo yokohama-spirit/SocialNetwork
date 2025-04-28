@@ -13,9 +13,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostServiceApi", "PostServi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostServiceLibrary", "PostServiceLibrary\PostServiceLibrary.csproj", "{50325CD7-63A9-4B9F-8F4E-8D388D47DC6D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommentServiceLibrary", "CommentServiceLibrary\CommentServiceLibrary.csproj", "{3FC4B2D2-9D42-4725-931F-45F5B54E058C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommentServiceLibrary", "CommentServiceLibrary\CommentServiceLibrary.csproj", "{3FC4B2D2-9D42-4725-931F-45F5B54E058C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommentServiceApi", "CommentServiceApi\CommentServiceApi.csproj", "{7CEC36F3-624C-4BD5-98F9-9F05C88F93E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommentServiceApi", "CommentServiceApi\CommentServiceApi.csproj", "{7CEC36F3-624C-4BD5-98F9-9F05C88F93E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LikesServiceLibrary", "LikesServiceLibrary\LikesServiceLibrary.csproj", "{D919F9DF-B608-4993-958A-A61F316E3477}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LikesServiceApi", "LikesServiceApi\LikesServiceApi.csproj", "{7F7EE29B-4B6B-4C99-BC4D-03D66D5FC443}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +55,14 @@ Global
 		{7CEC36F3-624C-4BD5-98F9-9F05C88F93E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CEC36F3-624C-4BD5-98F9-9F05C88F93E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CEC36F3-624C-4BD5-98F9-9F05C88F93E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D919F9DF-B608-4993-958A-A61F316E3477}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D919F9DF-B608-4993-958A-A61F316E3477}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D919F9DF-B608-4993-958A-A61F316E3477}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D919F9DF-B608-4993-958A-A61F316E3477}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F7EE29B-4B6B-4C99-BC4D-03D66D5FC443}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F7EE29B-4B6B-4C99-BC4D-03D66D5FC443}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F7EE29B-4B6B-4C99-BC4D-03D66D5FC443}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F7EE29B-4B6B-4C99-BC4D-03D66D5FC443}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

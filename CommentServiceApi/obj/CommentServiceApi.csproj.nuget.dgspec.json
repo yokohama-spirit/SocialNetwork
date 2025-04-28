@@ -163,6 +163,10 @@
               "target": "Package",
               "version": "[12.5.0, )"
             },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.15, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.4, )"
@@ -270,6 +274,10 @@
             "MediatR": {
               "target": "Package",
               "version": "[12.5.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.15, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",

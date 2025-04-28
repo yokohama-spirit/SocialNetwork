@@ -1504,6 +1504,7 @@
           "AuthServiceLibrary": "1.0.0",
           "AutoMapper": "14.0.0",
           "MediatR": "12.5.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.15",
           "Microsoft.EntityFrameworkCore": "9.0.4",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.4",
           "PostServiceLibrary": "1.0.0"
@@ -4291,6 +4292,7 @@
       "AutoMapper >= 14.0.0",
       "CommentServiceLibrary >= 1.0.0",
       "MediatR >= 12.5.0",
+      "Microsoft.AspNetCore.Authentication.JwtBearer >= 8.0.15",
       "Microsoft.EntityFrameworkCore >= 9.0.4",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.4",
       "Microsoft.EntityFrameworkCore.Sqlite >= 9.0.4",
@@ -4358,6 +4360,10 @@
           "MediatR": {
             "target": "Package",
             "version": "[12.5.0, )"
+          },
+          "Microsoft.AspNetCore.Authentication.JwtBearer": {
+            "target": "Package",
+            "version": "[8.0.15, )"
           },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",

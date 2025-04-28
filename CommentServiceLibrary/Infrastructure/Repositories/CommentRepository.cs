@@ -26,7 +26,6 @@ namespace CommentServiceLibrary.Infrastructure.Repositories
 {
     public class CommentRepository : ICommentRepository
     {
-        private readonly IHttpContextAccessor _httpContextAccessor;
         private readonly CommentsConnect _conn;
         private readonly IHttpClientFactory _httpClientFactory;
         private readonly ILogger<CommentRepository> _logg;
@@ -37,15 +36,13 @@ namespace CommentServiceLibrary.Infrastructure.Repositories
             IHttpClientFactory httpClientFactory,
             ILogger<CommentRepository> logg,
             IUserSupport support,
-            IMapper mapper,
-            IHttpContextAccessor httpContextAccessor)
+            IMapper mapper)
         {
             _conn = conn;
             _httpClientFactory = httpClientFactory;
             _logg = logg;
             _support = support;
             _mapper = mapper;
-            _httpContextAccessor = httpContextAccessor;
         }
         public async Task CreateCommentAsync(string postId, CreateCommentDTO request)
         {

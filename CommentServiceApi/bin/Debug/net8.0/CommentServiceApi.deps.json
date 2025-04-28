@@ -11,6 +11,7 @@
           "AutoMapper": "14.0.0",
           "CommentServiceLibrary": "1.0.0",
           "MediatR": "12.5.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.15",
           "Microsoft.EntityFrameworkCore": "9.0.4",
           "Microsoft.EntityFrameworkCore.Design": "9.0.4",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.4",
@@ -1053,7 +1054,7 @@
         },
         "runtime": {
           "AuthServiceLibrary.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -1063,13 +1064,14 @@
           "AuthServiceLibrary": "1.0.0",
           "AutoMapper": "14.0.0",
           "MediatR": "12.5.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.15",
           "Microsoft.EntityFrameworkCore": "9.0.4",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.4",
           "PostServiceLibrary": "1.0.0"
         },
         "runtime": {
           "CommentServiceLibrary.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -1085,7 +1087,7 @@
         },
         "runtime": {
           "PostServiceLibrary.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }

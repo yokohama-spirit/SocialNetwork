@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "kKu6C5wlgBFEnz3yjiPYvLjxzIj+yiLaxaA0v/FwphbbL9w6N2XFEt4DiNcY9YQLAcn3hLUIkAA4o5opZwptWQ==",
+  "dgSpecHash": "Obi1YtigYzaT5BA4Yne23zsR8d+yd7klv01muw13dT7/Ti3gXl5IJddtpQ+ze8YVwWBzL5RO0Ln/aGkMbKrwTg==",
   "success": true,
   "projectFilePath": "E:\\dotnet\\petprojects\\SocialNetwork\\CommentServiceApi\\CommentServiceApi.csproj",
   "expectedPackageFiles": [

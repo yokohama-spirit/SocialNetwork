@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PostServiceApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dec04ccc0ca523e5667f35ed45b36ce288ee7ff9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+622b9b5657e5feb5b532c179e99c441ed3d906b0")]
 [assembly: System.Reflection.AssemblyProductAttribute("PostServiceApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PostServiceApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
