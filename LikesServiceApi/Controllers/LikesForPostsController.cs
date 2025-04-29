@@ -49,6 +49,7 @@ namespace LikesServiceApi.Controllers
         }
 
         //Метод для того, чтобы получить данные о лайке, поставленном на пост
+        [AllowAnonymous]
         [HttpGet("{id}")]
         public async Task<ActionResult<Like>> GetPostLikeByIdAsync(string id)
         {
@@ -56,6 +57,7 @@ namespace LikesServiceApi.Controllers
         }
 
         //Метод для того, чтобы получить данные о лайке, поставленном на пост
+        [AllowAnonymous]
         [HttpGet("user/{userId}")]
         public async Task<ActionResult<IEnumerable<Like>>> GetUserLikesForPostsAsync(string userId)
         {

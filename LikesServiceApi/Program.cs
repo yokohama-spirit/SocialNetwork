@@ -30,8 +30,8 @@ builder.Services.AddDbContext<LikesConnect>(options =>
 
 builder.Services.AddScoped<IUserSupport, UserSupportForLikes>();
 builder.Services.AddScoped<ILikesForPostsRepository, LikesForPostsRepository>();
-
-
+builder.Services.AddScoped<ILikesForCommentsRepository, LikesForCommentsRepository>();
+builder.Services.AddScoped<ILikesForRepliesRepository, LikesForRepliesRepository>();
 
 
 

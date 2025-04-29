@@ -1054,7 +1054,7 @@
         },
         "runtime": {
           "AuthServiceLibrary.dll": {
-            "assemblyVersion": "1.0.0.0",
+            "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -1071,7 +1071,7 @@
         },
         "runtime": {
           "CommentServiceLibrary.dll": {
-            "assemblyVersion": "1.0.0.0",
+            "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -1087,7 +1087,7 @@
         },
         "runtime": {
           "PostServiceLibrary.dll": {
-            "assemblyVersion": "1.0.0.0",
+            "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
