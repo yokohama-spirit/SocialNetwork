@@ -112,10 +112,7 @@ builder.Services.AddAutoMapper(typeof(PostProfile));
 
 
 builder.Services.AddHttpContextAccessor(); // Добавляет IHttpContextAccessor
-builder.Services.AddHttpClient("AccountService", client =>
-{
-    client.BaseAddress = new Uri("http://localhost:5001");
-});
+builder.Services.AddHttpClient();
 
 
 var app = builder.Build();

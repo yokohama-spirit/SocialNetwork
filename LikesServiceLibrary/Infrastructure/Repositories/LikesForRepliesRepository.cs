@@ -19,12 +19,12 @@ namespace LikesServiceLibrary.Infrastructure.Repositories
     {
         private readonly LikesConnect _conn;
         private readonly IHttpClientFactory _httpClientFactory;
-        private readonly ILogger<LikesForPostsRepository> _logg;
+        private readonly ILogger<LikesForRepliesRepository> _logg;
         private readonly IUserSupport _support;
         public LikesForRepliesRepository
             (LikesConnect conn,
             IHttpClientFactory httpClientFactory,
-            ILogger<LikesForPostsRepository> logg,
+            ILogger<LikesForRepliesRepository> logg,
             IUserSupport support)
         {
             _conn = conn;

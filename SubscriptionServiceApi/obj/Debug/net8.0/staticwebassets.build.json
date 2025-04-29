@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "eV6Zxg/ARhgdEBfa7eKiQn7MPDOoBZlZ1NLckkfzeV4=",
+  "Source": "SubscriptionServiceApi",
+  "BasePath": "_content/SubscriptionServiceApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
