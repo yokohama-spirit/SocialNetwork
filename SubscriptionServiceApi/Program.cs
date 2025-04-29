@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using PostServiceLibrary.Domain.Interfaces;
+using RabbitMQ.Client;
 using SubscriptionServiceLibrary.Domain.Interfaces;
 using SubscriptionServiceLibrary.Infrastructure.Data;
 using SubscriptionServiceLibrary.Infrastructure.Repositories;
@@ -38,7 +39,12 @@ builder.Services.AddScoped<IUserSupport, UserSupportForSubs>();
 
 
 
+var rabbitMqConnection = new ConnectionFactory
+{
+    HostName = "localhost"
+}.CreateConnection();
 
+builder.Services.AddSingleton(rabbitMqConnection);
 
 
 

@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using PostServiceLibrary.Domain.Entities;
 using PostServiceLibrary.Domain.Interfaces;
+using RabbitMQ.Client;
 using SubscriptionServiceLibrary.Domain.Entities;
 using SubscriptionServiceLibrary.Domain.Interfaces;
 using SubscriptionServiceLibrary.Infrastructure.Data;
@@ -22,16 +23,19 @@ namespace SubscriptionServiceLibrary.Infrastructure.Repositories
         private readonly IHttpClientFactory _httpClientFactory;
         private readonly ILogger<SubscriptionRepository> _logg;
         private readonly IUserSupport _support;
+        private readonly IConnection _rabbitMqConnection;
         public SubscriptionRepository
             (SubsConnect conn,
             IHttpClientFactory httpClientFactory,
             ILogger<SubscriptionRepository> logg,
-            IUserSupport support)
+            IUserSupport support,
+            IConnection rabbitMqConnection)
         {
             _conn = conn;
             _httpClientFactory = httpClientFactory;
             _logg = logg;
             _support = support;
+            _rabbitMqConnection = rabbitMqConnection;
         }
 
         public async Task<IEnumerable<Subscription>> GetAllUserSubscriptionsAsync(string userId)
@@ -79,6 +83,23 @@ namespace SubscriptionServiceLibrary.Infrastructure.Repositories
                         };
                         await _conn.Subscriptions.AddAsync(newSub);
                         await _conn.SaveChangesAsync();
+
+
+                        // Отправка сообщения в RabbitMQ
+                        using var channel = _rabbitMqConnection.CreateModel();
+                        channel.QueueDeclare(queue: "notifications",
+                                             durable: false,
+                                             exclusive: false,
+                                             autoDelete: false,
+                                             arguments: null);
+
+                        var message = JsonSerializer.Serialize(newSub);
+                        var body = Encoding.UTF8.GetBytes(message);
+
+                        channel.BasicPublish(exchange: "",
+                                             routingKey: "notifications",
+                                             basicProperties: null,
+                                             body: body);
                     }
                 }
 

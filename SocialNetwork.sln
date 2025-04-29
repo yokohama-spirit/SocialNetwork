@@ -21,9 +21,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LikesServiceLibrary", "Like
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LikesServiceApi", "LikesServiceApi\LikesServiceApi.csproj", "{7F7EE29B-4B6B-4C99-BC4D-03D66D5FC443}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubscriptionServiceApi", "SubscriptionServiceApi\SubscriptionServiceApi.csproj", "{B63CDD62-DA01-43A9-979F-7EF9D484623B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SubscriptionServiceApi", "SubscriptionServiceApi\SubscriptionServiceApi.csproj", "{B63CDD62-DA01-43A9-979F-7EF9D484623B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubscriptionServiceLibrary", "SubscriptionServiceLibrary\SubscriptionServiceLibrary.csproj", "{D01C82AD-26E3-47B3-8C4D-C9FA2621702F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SubscriptionServiceLibrary", "SubscriptionServiceLibrary\SubscriptionServiceLibrary.csproj", "{D01C82AD-26E3-47B3-8C4D-C9FA2621702F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotificationService", "NotificationService\NotificationService.csproj", "{3860767B-012A-48C5-BE64-285108E53B46}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{D01C82AD-26E3-47B3-8C4D-C9FA2621702F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D01C82AD-26E3-47B3-8C4D-C9FA2621702F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D01C82AD-26E3-47B3-8C4D-C9FA2621702F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3860767B-012A-48C5-BE64-285108E53B46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3860767B-012A-48C5-BE64-285108E53B46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3860767B-012A-48C5-BE64-285108E53B46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3860767B-012A-48C5-BE64-285108E53B46}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
