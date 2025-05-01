@@ -25,7 +25,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SubscriptionServiceApi", "S
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SubscriptionServiceLibrary", "SubscriptionServiceLibrary\SubscriptionServiceLibrary.csproj", "{D01C82AD-26E3-47B3-8C4D-C9FA2621702F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotificationService", "NotificationService\NotificationService.csproj", "{3860767B-012A-48C5-BE64-285108E53B46}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NotificationService", "NotificationService\NotificationService.csproj", "{3860767B-012A-48C5-BE64-285108E53B46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiGateway", "ApiGateway\ApiGateway.csproj", "{6EA67FD8-90AC-4886-A180-DAC282B6A1AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{3860767B-012A-48C5-BE64-285108E53B46}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3860767B-012A-48C5-BE64-285108E53B46}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3860767B-012A-48C5-BE64-285108E53B46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EA67FD8-90AC-4886-A180-DAC282B6A1AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EA67FD8-90AC-4886-A180-DAC282B6A1AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EA67FD8-90AC-4886-A180-DAC282B6A1AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EA67FD8-90AC-4886-A180-DAC282B6A1AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
