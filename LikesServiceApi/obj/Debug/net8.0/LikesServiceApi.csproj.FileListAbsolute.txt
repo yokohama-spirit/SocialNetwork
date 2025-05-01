@@ -185,3 +185,5 @@ E:\dotnet\petprojects\SocialNetwork\LikesServiceApi\obj\Debug\net8.0\refint\Like
 E:\dotnet\petprojects\SocialNetwork\LikesServiceApi\obj\Debug\net8.0\LikesServiceApi.pdb
 E:\dotnet\petprojects\SocialNetwork\LikesServiceApi\obj\Debug\net8.0\LikesServiceApi.genruntimeconfig.cache
 E:\dotnet\petprojects\SocialNetwork\LikesServiceApi\obj\Debug\net8.0\ref\LikesServiceApi.dll
+E:\dotnet\petprojects\SocialNetwork\LikesServiceApi\bin\Debug\net8.0\Npgsql.dll
+E:\dotnet\petprojects\SocialNetwork\LikesServiceApi\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll

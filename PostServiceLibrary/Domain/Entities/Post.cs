@@ -13,8 +13,7 @@ namespace PostServiceLibrary.Domain.Entities
         public string Id { get; set; } = Guid.NewGuid().ToString();
         public string Title { get; set; }
         public string Content { get; set; }
-        public DateTime CreatedAt { get; set; } = DateTime.Now;
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public string? UserId { get; set; }
-        public User? Author { get; set; }
     }
 }

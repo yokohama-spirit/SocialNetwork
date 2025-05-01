@@ -15,5 +15,10 @@ namespace PostServiceLibrary.Infrastructure.Data
         public PostsConnect(DbContextOptions<PostsConnect> options) : base(options) { }
 
         public DbSet<Post> Posts { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Post>().HasKey(p => p.Id);
+        }
     }
 }

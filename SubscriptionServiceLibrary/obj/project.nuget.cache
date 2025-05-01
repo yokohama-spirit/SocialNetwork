@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "IpWZ/CAlPWWtVlQvbTEPOz7hklehCVCsh/uGd62AG1kQECucB7i0XOaGeHm1juQ0Dmk8+WTNNgm29JjN5XzF8A==",
+  "dgSpecHash": "E6r2fgOHtuWbpK9edYu50Bp4j1LP1HJW01ieHkg8A6SQmQnLb+DOLzODURkBdbIDXoDmAupxo6sPcvTRZoq59w==",
   "success": true,
   "projectFilePath": "E:\\dotnet\\petprojects\\SocialNetwork\\SubscriptionServiceLibrary\\SubscriptionServiceLibrary.csproj",
   "expectedPackageFiles": [
@@ -49,6 +49,8 @@
     "C:\\Users\\User\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\7.1.2\\microsoft.identitymodel.protocols.openidconnect.7.1.2.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.identitymodel.tokens\\7.1.2\\microsoft.identitymodel.tokens.7.1.2.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\mono.texttemplating\\3.0.0\\mono.texttemplating.3.0.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\npgsql\\9.0.3\\npgsql.9.0.3.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\9.0.4\\npgsql.entityframeworkcore.postgresql.9.0.4.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\rabbitmq.client\\6.7.0\\rabbitmq.client.6.7.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.10\\sqlitepclraw.bundle_e_sqlite3.2.1.10.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\sqlitepclraw.core\\2.1.10\\sqlitepclraw.core.2.1.10.nupkg.sha512",

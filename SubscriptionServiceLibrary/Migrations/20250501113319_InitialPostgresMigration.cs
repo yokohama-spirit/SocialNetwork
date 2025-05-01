@@ -5,7 +5,7 @@
 namespace SubscriptionServiceLibrary.Migrations
 {
     /// <inheritdoc />
-    public partial class FirstSubsMigration : Migration
+    public partial class InitialPostgresMigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -14,9 +14,9 @@ namespace SubscriptionServiceLibrary.Migrations
                 name: "Subscriptions",
                 columns: table => new
                 {
-                    Id = table.Column<string>(type: "TEXT", nullable: false),
-                    FollowerId = table.Column<string>(type: "TEXT", nullable: false),
-                    FollowingId = table.Column<string>(type: "TEXT", nullable: false)
+                    Id = table.Column<string>(type: "text", nullable: false),
+                    FollowerId = table.Column<string>(type: "text", nullable: false),
+                    FollowingId = table.Column<string>(type: "text", nullable: false)
                 },
                 constraints: table =>
                 {

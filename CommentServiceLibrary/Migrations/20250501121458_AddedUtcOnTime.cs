@@ -2,10 +2,10 @@
 
 #nullable disable
 
-namespace AuthServiceLibrary.Migrations
+namespace CommentServiceLibrary.Migrations
 {
     /// <inheritdoc />
-    public partial class SecondAuthMigration : Migration
+    public partial class AddedUtcOnTime : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

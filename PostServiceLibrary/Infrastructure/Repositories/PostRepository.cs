@@ -53,7 +53,6 @@ namespace PostServiceLibrary.Infrastructure.Repositories
         public async Task<IEnumerable<Post>> GetAllPostsAsync()
         {
             return await _conn.Posts
-                .Include(p => p.Author)
                 .ToListAsync() ?? throw new Exception("Постов пока нет.");
         }
 
@@ -69,7 +68,6 @@ namespace PostServiceLibrary.Infrastructure.Repositories
 
                 return await _conn.Posts
                     .Where(p => p.UserId == response.Id)
-                    .Include(p => p.Author)
                     .ToListAsync();
             }
             catch (HttpRequestException ex)
@@ -81,7 +79,6 @@ namespace PostServiceLibrary.Infrastructure.Repositories
         public async Task<Post> GetPostByIdAsync(string id)
         {
             return await _conn.Posts
-                    .Include(p => p.Author)
                     .FirstOrDefaultAsync(p => p.Id == id) ?? throw new Exception("Пост не существует.");
         }
 

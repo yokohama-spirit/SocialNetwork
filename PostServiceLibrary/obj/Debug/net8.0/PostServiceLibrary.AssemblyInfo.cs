@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PostServiceLibrary")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3c5450c5603cc5ef174f97b8349a9b1dc2056e45")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+84ed7ba7c773624454398c15151199025341ee64")]
 [assembly: System.Reflection.AssemblyProductAttribute("PostServiceLibrary")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PostServiceLibrary")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

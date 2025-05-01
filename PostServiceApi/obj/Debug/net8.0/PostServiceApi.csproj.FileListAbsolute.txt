@@ -176,3 +176,5 @@ E:\dotnet\petprojects\SocialNetwork\PostServiceApi\obj\Debug\net8.0\refint\PostS
 E:\dotnet\petprojects\SocialNetwork\PostServiceApi\obj\Debug\net8.0\PostServiceApi.pdb
 E:\dotnet\petprojects\SocialNetwork\PostServiceApi\obj\Debug\net8.0\PostServiceApi.genruntimeconfig.cache
 E:\dotnet\petprojects\SocialNetwork\PostServiceApi\obj\Debug\net8.0\ref\PostServiceApi.dll
+E:\dotnet\petprojects\SocialNetwork\PostServiceApi\bin\Debug\net8.0\Npgsql.dll
+E:\dotnet\petprojects\SocialNetwork\PostServiceApi\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll

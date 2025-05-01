@@ -5,7 +5,7 @@
 namespace LikesServiceLibrary.Migrations
 {
     /// <inheritdoc />
-    public partial class FirstLikesMigration : Migration
+    public partial class InitialPostgresMigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -14,11 +14,11 @@ namespace LikesServiceLibrary.Migrations
                 name: "Likes",
                 columns: table => new
                 {
-                    Id = table.Column<string>(type: "TEXT", nullable: false),
-                    UserId = table.Column<string>(type: "TEXT", nullable: true),
-                    PostId = table.Column<string>(type: "TEXT", nullable: true),
-                    CommentId = table.Column<string>(type: "TEXT", nullable: true),
-                    ReplyId = table.Column<string>(type: "TEXT", nullable: true)
+                    Id = table.Column<string>(type: "text", nullable: false),
+                    UserId = table.Column<string>(type: "text", nullable: true),
+                    PostId = table.Column<string>(type: "text", nullable: true),
+                    CommentId = table.Column<string>(type: "text", nullable: true),
+                    ReplyId = table.Column<string>(type: "text", nullable: true)
                 },
                 constraints: table =>
                 {

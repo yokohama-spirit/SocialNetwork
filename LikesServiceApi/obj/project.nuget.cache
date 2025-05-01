@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "lko8KOIOwwOr8hSsk+Io5fGOQogRxJxlwHp0BvUk26a3NeHNhUXYOaYCCiMkTNL2pmv48EfvZRanI8NsBP3W5g==",
+  "dgSpecHash": "R/kQzBJO5+Nq4PKPgSb2wJiacLFWKuuAd5NzSlsl2ojcpI0koe4AOGQF4JcrY3kcCoD2iAt0SkOOOUAbll+pUw==",
   "success": true,
   "projectFilePath": "E:\\dotnet\\petprojects\\SocialNetwork\\LikesServiceApi\\LikesServiceApi.csproj",
   "expectedPackageFiles": [
@@ -51,6 +51,8 @@
     "C:\\Users\\User\\.nuget\\packages\\microsoft.identitymodel.tokens\\7.1.2\\microsoft.identitymodel.tokens.7.1.2.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.openapi\\1.6.14\\microsoft.openapi.1.6.14.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\mono.texttemplating\\3.0.0\\mono.texttemplating.3.0.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\npgsql\\9.0.3\\npgsql.9.0.3.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\9.0.4\\npgsql.entityframeworkcore.postgresql.9.0.4.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.10\\sqlitepclraw.bundle_e_sqlite3.2.1.10.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\sqlitepclraw.core\\2.1.10\\sqlitepclraw.core.2.1.10.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.10\\sqlitepclraw.lib.e_sqlite3.2.1.10.nupkg.sha512",

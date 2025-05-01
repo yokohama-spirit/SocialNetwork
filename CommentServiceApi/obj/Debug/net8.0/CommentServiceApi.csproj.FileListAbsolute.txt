@@ -178,3 +178,5 @@ E:\dotnet\petprojects\SocialNetwork\CommentServiceApi\obj\Debug\net8.0\refint\Co
 E:\dotnet\petprojects\SocialNetwork\CommentServiceApi\obj\Debug\net8.0\CommentServiceApi.pdb
 E:\dotnet\petprojects\SocialNetwork\CommentServiceApi\obj\Debug\net8.0\CommentServiceApi.genruntimeconfig.cache
 E:\dotnet\petprojects\SocialNetwork\CommentServiceApi\obj\Debug\net8.0\ref\CommentServiceApi.dll
+E:\dotnet\petprojects\SocialNetwork\CommentServiceApi\bin\Debug\net8.0\Npgsql.dll
+E:\dotnet\petprojects\SocialNetwork\CommentServiceApi\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll

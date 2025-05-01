@@ -32,6 +32,8 @@ E:\dotnet\petprojects\SocialNetwork\NotificationService\bin\Debug\net8.0\Microso
 E:\dotnet\petprojects\SocialNetwork\NotificationService\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
 E:\dotnet\petprojects\SocialNetwork\NotificationService\bin\Debug\net8.0\Microsoft.OpenApi.dll
 E:\dotnet\petprojects\SocialNetwork\NotificationService\bin\Debug\net8.0\Mono.TextTemplating.dll
+E:\dotnet\petprojects\SocialNetwork\NotificationService\bin\Debug\net8.0\Npgsql.dll
+E:\dotnet\petprojects\SocialNetwork\NotificationService\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 E:\dotnet\petprojects\SocialNetwork\NotificationService\bin\Debug\net8.0\RabbitMQ.Client.dll
 E:\dotnet\petprojects\SocialNetwork\NotificationService\bin\Debug\net8.0\SQLitePCLRaw.batteries_v2.dll
 E:\dotnet\petprojects\SocialNetwork\NotificationService\bin\Debug\net8.0\SQLitePCLRaw.core.dll
@@ -143,6 +145,7 @@ E:\dotnet\petprojects\SocialNetwork\NotificationService\obj\Debug\net8.0\Notific
 E:\dotnet\petprojects\SocialNetwork\NotificationService\obj\Debug\net8.0\NotificationService.csproj.CoreCompileInputs.cache
 E:\dotnet\petprojects\SocialNetwork\NotificationService\obj\Debug\net8.0\NotificationService.MvcApplicationPartsAssemblyInfo.cs
 E:\dotnet\petprojects\SocialNetwork\NotificationService\obj\Debug\net8.0\NotificationService.MvcApplicationPartsAssemblyInfo.cache
+E:\dotnet\petprojects\SocialNetwork\NotificationService\obj\Debug\net8.0\scopedcss\bundle\NotificationService.styles.css
 E:\dotnet\petprojects\SocialNetwork\NotificationService\obj\Debug\net8.0\staticwebassets.build.json
 E:\dotnet\petprojects\SocialNetwork\NotificationService\obj\Debug\net8.0\staticwebassets.development.json
 E:\dotnet\petprojects\SocialNetwork\NotificationService\obj\Debug\net8.0\staticwebassets\msbuild.NotificationService.Microsoft.AspNetCore.StaticWebAssets.props
@@ -150,7 +153,6 @@ E:\dotnet\petprojects\SocialNetwork\NotificationService\obj\Debug\net8.0\staticw
 E:\dotnet\petprojects\SocialNetwork\NotificationService\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.NotificationService.props
 E:\dotnet\petprojects\SocialNetwork\NotificationService\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.NotificationService.props
 E:\dotnet\petprojects\SocialNetwork\NotificationService\obj\Debug\net8.0\staticwebassets.pack.json
-E:\dotnet\petprojects\SocialNetwork\NotificationService\obj\Debug\net8.0\scopedcss\bundle\NotificationService.styles.css
 E:\dotnet\petprojects\SocialNetwork\NotificationService\obj\Debug\net8.0\Notifica.A960C9D4.Up2Date
 E:\dotnet\petprojects\SocialNetwork\NotificationService\obj\Debug\net8.0\NotificationService.dll
 E:\dotnet\petprojects\SocialNetwork\NotificationService\obj\Debug\net8.0\refint\NotificationService.dll

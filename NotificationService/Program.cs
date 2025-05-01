@@ -33,7 +33,7 @@ channel.QueueDeclare(
     arguments: null);
 
 builder.Services.AddDbContext<NotificationConn>(options =>
-    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddHostedService<RabbitMQConsumerService>();
 

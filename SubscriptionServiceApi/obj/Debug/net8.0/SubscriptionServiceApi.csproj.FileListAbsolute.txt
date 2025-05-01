@@ -179,3 +179,5 @@ E:\dotnet\petprojects\SocialNetwork\SubscriptionServiceApi\obj\Debug\net8.0\Subs
 E:\dotnet\petprojects\SocialNetwork\SubscriptionServiceApi\obj\Debug\net8.0\SubscriptionServiceApi.genruntimeconfig.cache
 E:\dotnet\petprojects\SocialNetwork\SubscriptionServiceApi\obj\Debug\net8.0\ref\SubscriptionServiceApi.dll
 E:\dotnet\petprojects\SocialNetwork\SubscriptionServiceApi\bin\Debug\net8.0\RabbitMQ.Client.dll
+E:\dotnet\petprojects\SocialNetwork\SubscriptionServiceApi\bin\Debug\net8.0\Npgsql.dll
+E:\dotnet\petprojects\SocialNetwork\SubscriptionServiceApi\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
