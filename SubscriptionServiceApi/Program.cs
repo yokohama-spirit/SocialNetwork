@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using PostServiceLibrary.Domain.Interfaces;
 using RabbitMQ.Client;
+using SubscriptionServiceLibrary.Application.Services;
 using SubscriptionServiceLibrary.Domain.Interfaces;
 using SubscriptionServiceLibrary.Infrastructure.Data;
 using SubscriptionServiceLibrary.Infrastructure.Repositories;
@@ -23,13 +24,13 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<SubsConnect>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-
+ 
 
 
 // Dependency injection
 builder.Services.AddScoped<ISubscriptionRepository, SubscriptionRepository>();
 builder.Services.AddScoped<IUserSupport, UserSupportForSubs>();
-
+builder.Services.AddScoped<ISubscriptionService, SubscriptionService>();
 
 
 

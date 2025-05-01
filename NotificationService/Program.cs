@@ -40,31 +40,6 @@ builder.Services.AddHostedService<RabbitMQConsumerService>();
 var app = builder.Build();
 
 
-/*// Получаем NotificationConn из сервисов
-using (var scope = app.Services.CreateScope())
-{
-    var dbContext = scope.ServiceProvider.GetRequiredService<NotificationConn>();
-
-    var consumer = new EventingBasicConsumer(channel);
-    consumer.Received += (model, ea) =>
-    {
-        var body = ea.Body.ToArray();
-        var message = Encoding.UTF8.GetString(body);
-        var sub = JsonSerializer.Deserialize<Subscribe>(message);
-
-        // Используем dbContext вместо NotificationController._conn
-        dbContext.Notifications.Add(new Notification
-        {
-            Message = $"New subscribe! Follower ID: {sub.FollowerId}, following ID: {sub.FollowingId}!"
-        });
-        dbContext.SaveChanges(); // Не забудьте сохранить!
-
-        Console.WriteLine($" [x] Received {message}");
-    };
-
-    channel.BasicConsume(queue: "notifications", autoAck: true, consumer: consumer);
-}*/
-
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {

@@ -12,9 +12,12 @@ namespace SubscriptionServiceApi.Controllers
     public class SubsController : ControllerBase
     {
         private readonly ISubscriptionRepository _subsRep;
-        public SubsController(ISubscriptionRepository subsRep)
+        private readonly ISubscriptionService _subsService;
+        public SubsController
+            (ISubscriptionRepository subsRep, ISubscriptionService subsService)
         {
             _subsRep = subsRep;
+            _subsService = subsService;
         }
 
         //Метод для того, чтобы поставить лайк на пост
@@ -63,5 +66,14 @@ namespace SubscriptionServiceApi.Controllers
             var likes = await _subsRep.GetAllUserSubscriptionsAsync(userId);
             return Ok(likes);
         }
+
+        //Метод для получения рекомендованых пользователей
+        [HttpGet("recommended")]
+        public async Task<IActionResult> GetRecommendedUsers()
+        {
+            var users = await _subsService.GetRecommendedUsers();
+            return Ok(users);
+        }
+
     }
 }
