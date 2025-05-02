@@ -12,5 +12,6 @@ namespace AuthServiceLibrary.Infrastructure.Data
     public class DatabaseConnect : IdentityDbContext<User>
     {
         public DatabaseConnect(DbContextOptions<DatabaseConnect> options) : base(options) { }
+
     }
 }

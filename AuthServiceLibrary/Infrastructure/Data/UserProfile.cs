@@ -14,7 +14,6 @@ namespace AuthServiceLibrary.Infrastructure.Data
         public UserProfile()
         {
             CreateMap<CreateUserRequest, User>();
-            // CreateMap<LoginUserRequest, User>();
         }
     }
 }
