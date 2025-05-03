@@ -104,6 +104,9 @@ namespace ChannelsServiceLibrary.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("timestamp with time zone");
 
+                    b.Property<string>("UserId")
+                        .HasColumnType("text");
+
                     b.HasKey("Id");
 
                     b.HasIndex("ChannelId");

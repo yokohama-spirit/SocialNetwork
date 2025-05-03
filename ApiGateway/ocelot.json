@@ -402,6 +402,220 @@
       ],
       "UpstreamPathTemplate": "/api/notify",
       "UpstreamHttpMethod": [ "GET" ]
+    },
+
+    // ChannelsService routes - AdminsController
+    {
+      "DownstreamPathTemplate": "/api/channels/admins/{channelId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5007
+        }
+      ],
+      "UpstreamPathTemplate": "/api/channels/admins/{channelId}",
+      "UpstreamHttpMethod": [ "POST", "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/channels/admins/{channelId}/{userId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5007
+        }
+      ],
+      "UpstreamPathTemplate": "/api/channels/admins/{channelId}/{userId}",
+      "UpstreamHttpMethod": [ "DELETE" ]
+    },
+
+    // ChannelsService routes - ChannelsController
+    {
+      "DownstreamPathTemplate": "/api/channels",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5007
+        }
+      ],
+      "UpstreamPathTemplate": "/api/channels",
+      "UpstreamHttpMethod": [ "POST", "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/channels/{channelId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5007
+        }
+      ],
+      "UpstreamPathTemplate": "/api/channels/{channelId}",
+      "UpstreamHttpMethod": [ "DELETE", "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/channels/name/{channelId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5007
+        }
+      ],
+      "UpstreamPathTemplate": "/api/channels/name/{channelId}",
+      "UpstreamHttpMethod": [ "PATCH" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/channels/desc/{channelId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5007
+        }
+      ],
+      "UpstreamPathTemplate": "/api/channels/desc/{channelId}",
+      "UpstreamHttpMethod": [ "PATCH" ]
+    },
+
+    // ChannelsService routes - CommentsController
+    {
+      "DownstreamPathTemplate": "/api/channels/comments/{channelId}/{postId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5007
+        }
+      ],
+      "UpstreamPathTemplate": "/api/channels/comments/{channelId}/{postId}",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/channels/comments/{postId}/{commentId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5007
+        }
+      ],
+      "UpstreamPathTemplate": "/api/channels/comments/{postId}/{commentId}",
+      "UpstreamHttpMethod": [ "PUT" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/channels/comments/{channelId}/{postId}/{commentId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5007
+        }
+      ],
+      "UpstreamPathTemplate": "/api/channels/comments/{channelId}/{postId}/{commentId}",
+      "UpstreamHttpMethod": [ "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/channels/comments/{postId}/{commentId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5007
+        }
+      ],
+      "UpstreamPathTemplate": "/api/channels/comments/{postId}/{commentId}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/channels/comments/{postId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5007
+        }
+      ],
+      "UpstreamPathTemplate": "/api/channels/comments/{postId}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
+    // ChannelsService routes - PostsController
+    {
+      "DownstreamPathTemplate": "/api/channels/posts/{channelId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5007
+        }
+      ],
+      "UpstreamPathTemplate": "/api/channels/posts/{channelId}",
+      "UpstreamHttpMethod": [ "POST", "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/channels/posts/{channelId}/{postId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5007
+        }
+      ],
+      "UpstreamPathTemplate": "/api/channels/posts/{channelId}/{postId}",
+      "UpstreamHttpMethod": [ "PUT", "DELETE", "GET" ]
+    },
+
+    // ChannelsService routes - SubscribersController
+    {
+      "DownstreamPathTemplate": "/api/channels/subs/{channelId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5007
+        }
+      ],
+      "UpstreamPathTemplate": "/api/channels/subs/{channelId}",
+      "UpstreamHttpMethod": [ "POST", "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/channels/subs/join/{channelId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5007
+        }
+      ],
+      "UpstreamPathTemplate": "/api/channels/subs/join/{channelId}",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/channels/subs/leave/{channelId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5007
+        }
+      ],
+      "UpstreamPathTemplate": "/api/channels/subs/leave/{channelId}",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/channels/subs/{channelId}/{subId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5007
+        }
+      ],
+      "UpstreamPathTemplate": "/api/channels/subs/{channelId}/{subId}",
+      "UpstreamHttpMethod": [ "DELETE", "GET" ]
     }
   ],
   "GlobalConfiguration": {

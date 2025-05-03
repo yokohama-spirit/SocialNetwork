@@ -33,8 +33,8 @@ builder.Services.AddScoped<IChannelAdminsRepository, ChannelAdminsRepository>();
 builder.Services.AddScoped<IChannelRepository, ChannelRepository>();
 builder.Services.AddScoped<IUserSupport, UserSupportForChannels>();
 builder.Services.AddScoped<IChannelSubsRepository, ChannelSubsRepository>();
-
-
+builder.Services.AddScoped<IChannelPostsRepository, ChannelPostsRepository>();
+builder.Services.AddScoped<IChannelCommentsRepository, ChannelCommentsRepository>();
 
 
 

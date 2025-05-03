@@ -10,6 +10,7 @@ namespace ChannelsServiceLibrary.Domain.Entities
     {
         public string Id { get; set; } = Guid.NewGuid().ToString();
         public required string Content { get; set; }
+        public string? UserId { get; set; }
         public string? ChannelId { get; set; }
         public Channel? Channel { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;

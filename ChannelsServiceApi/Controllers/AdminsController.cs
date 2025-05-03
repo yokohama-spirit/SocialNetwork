@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace ChannelsServiceApi.Controllers
 {
     [Authorize]
-    [Route("api/admins")]
+    [Route("api/channels/admins")]
     [ApiController]
     public class AdminsController : ControllerBase
     {

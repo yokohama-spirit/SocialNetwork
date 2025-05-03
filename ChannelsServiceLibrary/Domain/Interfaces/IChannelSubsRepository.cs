@@ -15,5 +15,6 @@ namespace ChannelsServiceLibrary.Domain.Interfaces
         Task AddChannelSubAsync(string channelId, ChannelSubscriber command);
         Task JoinChannelAsync(string channelId);
         Task DeleteChannelSubAsync(string channelId, string subId);
+        Task LeaveChannelAsync(string channelId);
     }
 }

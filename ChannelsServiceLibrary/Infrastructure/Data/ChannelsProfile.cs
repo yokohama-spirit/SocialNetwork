@@ -16,6 +16,7 @@ namespace ChannelsServiceLibrary.Infrastructure.Data
         public ChannelsProfile()
         {
             CreateMap<CreateChannelRequest, Channel>();
+            CreateMap<CreatePostDTO, ChannelPost>();
         }
     }
 }

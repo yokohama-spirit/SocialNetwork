@@ -153,5 +153,42 @@ namespace ChannelsServiceLibrary.Infrastructure.Repositories
                 throw new Exception("Вы уже подписаны на канал или являетесь его администратором");
             }
         }
+
+
+        public async Task LeaveChannelAsync(string channelId)
+        {
+            var userId = await _support.GetCurrentUserId();
+            var channel = await _channelRep.GetChannelByIdAsync(channelId);
+            var admin = await _conn.Admins
+                .FirstOrDefaultAsync(a => a.UserId == userId && a.ChannelId == channelId);
+            var sub = await _conn.Subscribers
+                .FirstOrDefaultAsync
+                (a => a.UserId == userId && a.ChannelId == channelId);
+            if(sub == null && admin == null && channel.MainAdminId != userId)
+            {
+                throw new Exception("Нельзя покинуть канал не числясь в его подписчиках/админах.");
+            }
+
+            if(sub != null)
+            {
+                _conn.Subscribers.Remove(sub);
+                await _conn.SaveChangesAsync();
+            }
+            else
+            {
+                if (admin != null)
+                {
+                    _conn.Admins.Remove(admin);
+                    await _conn.SaveChangesAsync();
+                }
+                else
+                {
+                    if(channel.MainAdminId == userId)
+                    {
+                        throw new Exception("Нельзя покинуть канал являясь его создателем.");
+                    }
+                }
+            }
+        }
     }
 }

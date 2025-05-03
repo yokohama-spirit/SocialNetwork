@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace ChannelsServiceApi.Controllers
 {
     [Authorize]
-    [Route("api/channel/subs")]
+    [Route("api/channels/subs")]
     [ApiController]
     public class SubscribersController : ControllerBase
     {
@@ -54,6 +54,21 @@ namespace ChannelsServiceApi.Controllers
             }
         }
 
+        //Метод для подписки на канал
+        [HttpPost("leave/{channelId}")]
+        public async Task<IActionResult> LeaveChannel
+            (string channelId)
+        {
+            try
+            {
+                await _subsRep.LeaveChannelAsync(channelId);
+                return Ok("Вы отписались от канала.");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"Ошибка: {ex}");
+            }
+        }
 
         //Метод для удаления подписчика
         [HttpDelete("{channelId}/{subId}")]
