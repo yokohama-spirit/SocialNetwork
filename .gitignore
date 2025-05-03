@@ -1,0 +1,58 @@
+# Общие правила для .NET
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.vs/
+*.vscode/
+*.swp
+*.DS_Store
+
+# Логи и временные файлы
+*.log
+*.tmp
+*.temp
+
+# NuGet
+packages/
+*.nupkg
+.nuget/
+
+# Резервные копии
+*.bak
+*.backup
+
+# Файлы IDE
+.idea/
+
+# Docker (если вдруг появится)
+docker-compose.*
+.dockerignore
+Dockerfile*
+
+# Специфичные для проектов
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
+
+# Entity Framework миграции (если используются)
+/Migrations/
+
+# Тестовые данные
+*.testdata
+
+# Результаты сборки
+/publish/
+/output/
+
+# Файлы медиа (если MediaTr или другие библиотеки генерируют что-то)
+/media/
+/temp/
+
+# RabbitMQ (если есть локальные очереди)
+*.queue
+*.exchange
+
+# Ocelot (кеш или временные файлы)
+ocelot.cache.json
