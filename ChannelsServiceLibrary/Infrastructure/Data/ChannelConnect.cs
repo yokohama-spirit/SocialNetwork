@@ -21,5 +21,6 @@ namespace ChannelsServiceLibrary.Infrastructure.Data
 
         //Subscribers
         public DbSet<ChannelSubscriber> Subscribers { get; set; }
+        public DbSet<JoinChannelRequest> JoinRequests { get; set; }
     }
 }

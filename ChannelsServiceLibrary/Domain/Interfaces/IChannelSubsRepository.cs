@@ -13,7 +13,7 @@ namespace ChannelsServiceLibrary.Domain.Interfaces
         Task<ChannelSubscriber?> GetChannelSubByIdAsync(string channelId, string subId);
         Task<IEnumerable<ChannelSubscriber>> GetAllSubsAsync(string channelId);
         Task AddChannelSubAsync(string channelId, ChannelSubscriber command);
-        Task JoinChannelAsync(string channelId);
+        Task<int> JoinChannelAsync(string channelId);
         Task DeleteChannelSubAsync(string channelId, string subId);
         Task LeaveChannelAsync(string channelId);
     }

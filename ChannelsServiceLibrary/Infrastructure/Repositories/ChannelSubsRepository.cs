@@ -127,7 +127,7 @@ namespace ChannelsServiceLibrary.Infrastructure.Repositories
                 .FirstOrDefaultAsync(s => s.UserId == subId && s.ChannelId == channelId);
         }
 
-        public async Task JoinChannelAsync(string channelId)
+        public async Task<int> JoinChannelAsync(string channelId)
         {
             var channel = await _channelRep.GetChannelByIdAsync(channelId);
             var userId = await _support.GetCurrentUserId();
@@ -137,21 +137,38 @@ namespace ChannelsServiceLibrary.Infrastructure.Repositories
 
             var isAdmin = await _conn.Admins
                 .AnyAsync(a => a.UserId == userId && a.ChannelId == channelId);
-
-            if (!existingSub && !isAdmin && channel.MainAdminId != userId)
+            if(channel.Type == ChannelType.Public)
             {
-                var newSub = new ChannelSubscriber
+                if (!existingSub && !isAdmin && channel.MainAdminId != userId)
                 {
-                    UserId = userId,
-                    ChannelId = channelId
-                };
-                await _conn.Subscribers.AddAsync(newSub);
-                await _conn.SaveChangesAsync();
+
+                    var newSub = new ChannelSubscriber
+                    {
+                        UserId = userId,
+                        ChannelId = channelId
+                    };
+                    await _conn.Subscribers.AddAsync(newSub);
+                    await _conn.SaveChangesAsync();
+                    return 0;
+                }
+                else
+                {
+                    throw new Exception("Вы уже подписаны на канал или являетесь его администратором");
+                }
             }
             else
             {
-                throw new Exception("Вы уже подписаны на канал или являетесь его администратором");
+                var request = new JoinChannelRequest
+                {
+                    SubscriberId = userId,
+                    MainAdminId = channel.MainAdminId,
+                    ChannelId = channelId
+                };
+                await _conn.JoinRequests.AddAsync(request);
+                await _conn.SaveChangesAsync();
+                return 1;
             }
+
         }
 
 

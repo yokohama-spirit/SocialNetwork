@@ -1,13 +1,16 @@
 using ChannelsServiceLibrary.Application.Requests;
+using ChannelsServiceLibrary.Application.Services;
 using ChannelsServiceLibrary.Domain.Interfaces;
 using ChannelsServiceLibrary.Infrastructure.Data;
 using ChannelsServiceLibrary.Infrastructure.Repositories;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Http.Json;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using PostServiceLibrary.Domain.Interfaces;
 using System.Text;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -35,11 +38,14 @@ builder.Services.AddScoped<IUserSupport, UserSupportForChannels>();
 builder.Services.AddScoped<IChannelSubsRepository, ChannelSubsRepository>();
 builder.Services.AddScoped<IChannelPostsRepository, ChannelPostsRepository>();
 builder.Services.AddScoped<IChannelCommentsRepository, ChannelCommentsRepository>();
+builder.Services.AddScoped<ICreatorService, CreatorService>();
 
 
 
-
-
+builder.Services.Configure<JsonOptions>(options =>
+{
+    options.SerializerOptions.Converters.Add(new JsonStringEnumConverter());
+});
 
 
 

@@ -16,6 +16,7 @@ namespace ChannelsServiceLibrary.Domain.Entities
         public List<ChannelAdmin>? Admins { get; set; }
         public List<ChannelSubscriber>? Subscribers { get; set; }
         public List<ChannelPost>? Posts { get; set; }
+        public ChannelType Type { get; set; } = ChannelType.Public;
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
         // Главный админ

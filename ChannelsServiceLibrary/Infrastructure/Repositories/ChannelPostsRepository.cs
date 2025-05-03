@@ -76,9 +76,34 @@ namespace ChannelsServiceLibrary.Infrastructure.Repositories
 
         public async Task<IEnumerable<ChannelPost>> GetAllPostsAsync(string channelId)
         {
-            return await _conn.Posts
-            .Where(p => p.ChannelId == channelId)
-            .ToListAsync();
+            var channel = await _channelRep.GetChannelByIdAsync(channelId);
+            if(channel.Type == ChannelType.Public)
+            {
+                return await _conn.Posts
+                .Where(p => p.ChannelId == channelId)
+                .ToListAsync();
+            }
+            else
+            {
+                var userId = await _support.GetCurrentUserId();
+                var admin = await _conn.Admins
+                    .FirstOrDefaultAsync(a => a.UserId == userId && a.ChannelId == channelId);
+                var sub = await _conn.Subscribers
+                        .FirstOrDefaultAsync
+                        (a => a.UserId == userId && a.ChannelId == channelId);
+                if(admin != null || sub != null || channel.MainAdminId == userId)
+                {
+                    return await _conn.Posts
+                    .Where(p => p.ChannelId == channelId)
+                    .ToListAsync();
+                }
+                else
+                {
+                    throw new Exception
+                        ("Нельзя просмотреть посты закрытого канала не являясь его участником.");
+                }
+            }
+
         }
 
         public async Task<ChannelPost> GetChannelPostByIdAsync(string channelId, string postId)

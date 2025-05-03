@@ -40,6 +40,9 @@ namespace ChannelsServiceLibrary.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<int>("Type")
+                        .HasColumnType("integer");
+
                     b.HasKey("Id");
 
                     b.ToTable("Channels");
@@ -131,6 +134,28 @@ namespace ChannelsServiceLibrary.Migrations
                     b.HasIndex("ChannelId");
 
                     b.ToTable("Subscribers");
+                });
+
+            modelBuilder.Entity("ChannelsServiceLibrary.Domain.Entities.JoinChannelRequest", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("text");
+
+                    b.Property<string>("ChannelId")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("MainAdminId")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("SubscriberId")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("JoinRequests");
                 });
 
             modelBuilder.Entity("ChannelsServiceLibrary.Domain.Entities.ChannelAdmin", b =>

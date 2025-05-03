@@ -45,8 +45,15 @@ namespace ChannelsServiceApi.Controllers
         {
             try
             {
-                await _subsRep.JoinChannelAsync(channelId);
-                return Ok("Вы подписались на канал!");
+                var result = await _subsRep.JoinChannelAsync(channelId);
+                if(result == 0)
+                {
+                    return Ok("Вы успешно зашли в канал!");
+                }
+                else
+                {
+                    return Ok("Заявка на вступление подана.");
+                }
             }
             catch (Exception ex)
             {
@@ -102,7 +109,7 @@ namespace ChannelsServiceApi.Controllers
             }
         }
 
-
+        //Метод для получения всех подписчиков канала
         [HttpGet("{channelId}")]
         public async Task<IActionResult> GetAllSubscribers
             (string channelId)
