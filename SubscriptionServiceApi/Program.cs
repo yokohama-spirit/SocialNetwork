@@ -79,7 +79,7 @@ builder.Services.AddAuthorization(); // Добавляем политики авторизации
 
 
 
-builder.Services.AddHttpContextAccessor(); // Добавляет IHttpContextAccessor
+builder.Services.AddHttpContextAccessor(); 
 builder.Services.AddHttpClient();
 
 

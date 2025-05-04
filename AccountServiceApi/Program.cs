@@ -27,7 +27,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<DatabaseConnect>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-builder.Services.AddHttpContextAccessor(); // Добавляет IHttpContextAccessor
+builder.Services.AddHttpContextAccessor(); 
 
 
 

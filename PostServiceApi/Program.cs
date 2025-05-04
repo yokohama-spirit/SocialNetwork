@@ -111,7 +111,7 @@ builder.Services.AddCors(options =>
 builder.Services.AddAutoMapper(typeof(PostProfile));
 
 
-builder.Services.AddHttpContextAccessor(); // Добавляет IHttpContextAccessor
+builder.Services.AddHttpContextAccessor();
 builder.Services.AddHttpClient();
 
 
