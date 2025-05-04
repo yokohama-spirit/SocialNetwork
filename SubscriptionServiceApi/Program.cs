@@ -20,7 +20,8 @@ builder.Services.AddSwaggerGen();
 
 
 
-//DB
+
+//DataBase
 builder.Services.AddDbContext<SubsConnect>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
