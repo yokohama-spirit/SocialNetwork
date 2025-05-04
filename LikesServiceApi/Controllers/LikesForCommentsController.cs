@@ -17,7 +17,7 @@ namespace LikesServiceApi.Controllers
             _likesRep = likesRep;
         }
 
-        //Метод для того, чтобы поставить лайк на пост
+        //Метод для того, чтобы поставить лайк на комментарий
         [HttpPost("{commentId}")]
         public async Task<IActionResult> Like(string commentId)
         {
@@ -32,7 +32,7 @@ namespace LikesServiceApi.Controllers
             }
         }
 
-        //Метод для того, чтобы убрать лайк с поста
+        //Метод для того, чтобы убрать лайк с комментария
         [HttpDelete("{commentId}")]
         public async Task<IActionResult> Unlike(string commentId)
         {
@@ -47,18 +47,18 @@ namespace LikesServiceApi.Controllers
             }
         }
 
-        //Метод для того, чтобы получить данные о лайке, поставленном на пост
+        //Метод для того, чтобы получить данные о лайке, поставленном на комментарий
         [AllowAnonymous]
         [HttpGet("{id}")]
-        public async Task<ActionResult<Like>> GetPostLikeByIdAsync(string id)
+        public async Task<ActionResult<Like>> GetCommentLikeByIdAsync(string id)
         {
             return await _likesRep.GetCommentLikeByIdAsync(id);
         }
 
-        //Метод для того, чтобы получить данные о лайке, поставленном на пост
+        //Метод для того, чтобы получить все лайки пользователя, поставленные на комментарий
         [AllowAnonymous]
         [HttpGet("user/{userId}")]
-        public async Task<ActionResult<IEnumerable<Like>>> GetUserLikesForPostsAsync(string userId)
+        public async Task<ActionResult<IEnumerable<Like>>> GetUserLikesForCommentsAsync(string userId)
         {
             var likes = await _likesRep.GetAllUserLikesForCommentsAsync(userId);
             return Ok(likes);

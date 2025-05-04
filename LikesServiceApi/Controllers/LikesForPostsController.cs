@@ -56,7 +56,7 @@ namespace LikesServiceApi.Controllers
             return await _likesRep.GetPostLikeByIdAsync(id);
         }
 
-        //Метод для того, чтобы получить данные о лайке, поставленном на пост
+        //Метод для того, чтобы получить данные о лайках, поставленных пользователем на посты
         [AllowAnonymous]
         [HttpGet("user/{userId}")]
         public async Task<ActionResult<IEnumerable<Like>>> GetUserLikesForPostsAsync(string userId)
